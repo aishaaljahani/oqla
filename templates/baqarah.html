@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>المراجعة </title>
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ 
+
+
+.nav {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  top: 0;
+}
+
+.subnav {
+  position: sticky;
+  bottom: 0;
+  top: 60px;
+}
+
+.nav {
+  background: #9BA98C;
+}
+.nav__title {
+  margin: 0px 30px;
+}
+.nav__item1 {
+  display: inline-block;
+  margin: 0px 20px;
+  color: #FFFCE9;
+}
+
+.hero {
+    background: #FFFCE9;
+
+  justify-content: center;
+  align-items: center;
+  min-height: 92vh;
+}
+.hero h1 {
+  font-size: 6em;
+  margin: 0 20px;
+  
+}
+.nav-link
+{
+  margin: 0px 10px;
+
+}
+
+
+
+
+
+    
+    button {
+      background-color: #9BA98C;
+      color: white;
+      font-size: 7px;
+      padding: 2px;
+      border-radius: 30px;
+      letter-spacing: 2.2px;
+    }
+    button:hover{
+      background-color: rgba(0,0,0,.5);
+    }
+  
+   .pp{
+    
+      top: 30px;
+    margin: 60px;
+    font-size: 18px;
+    color: white;
+
+  }
+  .buttonn{
+    top: 10px;
+    margin: 30px;
+    font-size: 16px;
+  }
+ /* List */
+.uul {
+  counter-reset: index;  
+  padding: 0;
+  max-width: 300px;
+  align-content: initial;
+}
+
+/* List element */
+.lli {
+    text-align: right;
+  counter-increment: index; 
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+
+
+
+/* Element separation */
+.lli + .lli {
+  border-top: 1px solid #9BA98C;
+}
+
+.aaa{
+    color: #9BA98C;
+padding-right: 2px;
+padding-left: 20px;
+
+}
+.aa{
+    text-align: right;
+    color: #9BA98C;
+
+padding-left: 2px;
+
+}
+ .aaa:hover {
+color: #B7976C;
+  opacity: 0.5;
+
+}
+
+</style>
+</head>
+
+ 
+
+
+<body>
+  <div class="site">
+    <nav class="nav">
+      <li class="nav-item1">
+     
+      <li class="nav-item1">
+        <a class="nav-link active" href="#" style="color: #DDD6CC"; > <i class="fa fa-user" ></i>
+        </a>
+      </li>
+        <li class="nav-item1">
+          <a class="nav-link active" href="#" style="color: #DDD6CC"; > تواصل معنا </a>
+        </li>
+        <li class="nav-item1">
+          <a class="nav-link" href="2.html" style="color: #FFFCE9" > المراجعة</a>
+        </li>
+        <li class="nav-item1">
+          <a class="nav-link" href="home.html" style="color: #DDD6CC" > الرئيسية</a>
+        </li>
+        <li class="nav-item1">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><img src = "{{url_for('static', filename='LOGO.svg')}}" style="width: 25%";></a>
+        </li>
+      </ul>
+    </nav>
+  
+    <div class="hero" >
+
+       
+            <div class="card border-secondary mb-3" style="float:right; width:50rem; margin: 20px ;">
+            <div class="card-header" style="text-align: right;  background-color: #9BA98C ; color:#FFFCE9;  " ><a href="#"><button  style="align-self: start;  background-color: #FFFCE9 ; color:#9BA98C;" ><b>+</b></button></a>  سورة البقرة   </div>
+            <div class="card-body text-secondary" style=" background-color: #f0e8de " >
+                    <ul class="uul">
+                        
+                        <li class="lli"> <a href="#"><button ><b>بدء  </b></button></a> <p class="aa">   مراجعة سورة البقرة من آيه 1إلى آيه 52 </p>  </li>
+                       
+     
+    
+                        </ul>
+
+            </div>
+
+    </div>
+        <div class="card border-secondary mb-3" style="width:25%; margin: 20px ;">
+         
+          <div class="card-body text-secondary" style=" background-color: #FFFCE9 " >
+            <center>
+                    <p class="aa" style=" text-align: center;" > سورة البقرة </p>   
+                    <p class="aa" style="color:  #B7976C; text-align: center;" >   سورة مكية</p>
+
+                    <img src = "{{url_for('static', filename='cer1.svg')}}" style="width: 25%";>
+  
+                    <p class="aa" style="color:  #B7976C; text-align: center;">   تمت مراجعة سورة البقرة من آيه 1إلى آيه 52</p>
+                </center>
+            
+                    </div>
+                  </div>
+      </div>
+  
+
+
+ 
+
+</body>
+
+
+
+
+
+</html>
